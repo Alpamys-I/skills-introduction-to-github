@@ -1,6 +1,3 @@
-# Combine into a data frame
-df <- data.frame(x = x, y = y, z = z)
-
 
 # Set seed for reproducibility
 set.seed(123)
@@ -45,6 +42,9 @@ plot(density(x),
      lwd = 2)
 
 library(ggplot2)
+
+# Combine into a data frame
+df <- data.frame(x = x, y = y, z = z)
 
 # Histogram with ggplot2
 ggplot(df, aes(x)) +
