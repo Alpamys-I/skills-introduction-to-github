@@ -25,6 +25,9 @@ y <- 0.5 * x + rnorm(1000, mean = 0, sd = 5)
 # Create a third variable, uncorrelated
 z <- rnorm(1000, mean = 30, sd = 7)
 
+# Combine into a data frame
+df <- data.frame(x = x, y = y, z = z)
+
 # Scatterplot matrix
 pairs(df, main = "Scatterplot Matrix")
 
@@ -43,8 +46,7 @@ plot(density(x),
 
 library(ggplot2)
 
-# Combine into a data frame
-df <- data.frame(x = x, y = y, z = z)
+
 
 # Histogram with ggplot2
 ggplot(df, aes(x)) +
