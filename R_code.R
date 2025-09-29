@@ -1,3 +1,7 @@
+# Combine into a data frame
+df <- data.frame(x = x, y = y, z = z)
+
+
 # Set seed for reproducibility
 set.seed(123)
 
